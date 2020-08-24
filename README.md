@@ -2,7 +2,7 @@
 HTML_CSS_Dasar
 
 catatan penting :
-* Website : Halaman yang menampilkan informasi melalui teks atau gambar. Website dapat diakses melalui internet dengan menggunakan browser.
+* ### Website : Halaman yang menampilkan informasi melalui teks atau gambar. Website dapat diakses melalui internet dengan menggunakan browser.
 *	Browser : Sebuah perangkat lunak yang dapat menerjemahkan berkas HTML, CSS dan Javascript yang di dapat dari server untuk ditampilkan dalam bentuk halaman website.
 *	HTTP Server : Server berperan pada sebuah website sebagai sebuah software yang dapat menerima transaksi dari HyperText Transfer Protocol.
 *	DNS Server : Server yang dapat mengubah/mengarahkan website melalui sebuah nama domain.
