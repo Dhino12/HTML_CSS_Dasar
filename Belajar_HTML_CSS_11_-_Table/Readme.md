@@ -1,14 +1,8 @@
-| Elemen dan Atribut | Description                                           |
-| ------------------ | ----------------------------------------------------- | 
-| Table              | Menetapkan Elemen Table                               |
-| td                 | Menetapkan sel dalam baris Table                      |
-| | colspan="number" | jumlah kolom yang dicakup oleh sel                    |
-| | rowspan="number" | Jumlah row yang dicakup oleh header.                  | 
-| th                 | Menetapkan header yang terkait dengan baris atau kolom |
-| | colspan="number" | jumlah kolom yang dicakup oleh sel                    |
-| | rowspan="number" | Jumlah row yang dicakup oleh header.                  |
-| | headers="nama header" | Mengasosiasikan header dengan header lain.       |
-| | scope="row/col/rowgroup/colgroup" | Mengasosiasikan header dengan baris, kelompok baris, kolom atau kelompok kolom. |
+| Elemen             | Description                                           | Atribut           
+| ------------------ | ----------------------------------------------------- | ------------------
+| Table              | Menetapkan Elemen Table                               | border="number"   
+| td                 | Menetapkan sel dalam baris Table                      | rowspan="number" , colspan="number" 
+| th                 | Menetapkan header terkait dengan baris atau kolom     | rowspan="number" , colspan="number" ,headers="nama header" ,scipe="row/col/rowgroup/colgroup"
 | tr                 | Menetapkan sebuah baris pada tabel                    |
 | caption            | Memberikan judul pada sebuah tabel                    |
 | col                | Menetapkan Sebuah Kolom                               |
