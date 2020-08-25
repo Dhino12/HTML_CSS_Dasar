@@ -1,4 +1,5 @@
 | Karakter | Deskripsi                 | Named Entity | Numeric Entity           | 
+| -------- | ------------------------- | ------------ | ------------------------ |
 |          | non-break space           | &nbsp;       | &#160;                   |  
 |    &     | Ampersand                 | &amp;        | &#160;                   |  
 |    &     | Ampersand                 | &amp;        | &#038;                   |  
