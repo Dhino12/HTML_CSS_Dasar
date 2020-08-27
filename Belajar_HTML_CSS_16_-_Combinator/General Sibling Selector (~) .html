@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        /* General Sibling Selector (~) */
+        /* Rule di atas akan diterapkan pada elemen paragraf yang 
+            berada setelah elemen img selama masih di dalam induk yang sama */
+        img ~ p{
+            color: brown;
+        }
+        /* =================================== */
+    </style>
+</head>
+<body>
+    <img src="../Belajar_HTML_CSS_06_-_Gambar/assets/image/syaro.jpg" alt="" width="200px">
+    <p>Syaro Kirima</p>
+    <p>Haii....</p>
+    <div>
+        <p>Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada elemen paragraf ini</p>
+    </div>
+    <p>Hallo</p>
+</body>
+</html>

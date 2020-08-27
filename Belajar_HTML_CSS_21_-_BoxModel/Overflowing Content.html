@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px;
+        }
+        div {
+            display: inline-block;
+            margin-right: 10px; 
+        }
+
+        /* 
+Property overflow
+•	visible : Merupakan nilai default pada properti ini. Konten yang tidak tertampung (overflow) akan tetap ditampilkan seperti pada standarnya.
+•	hidden : Jika terjadi overflow, maka konten yang tidak tertampung akan disembunyikan.
+•	scroll : Memunculkan scroll bar pada pinggir elemen, sehingga konten yang tidak tertampung akan ditampilkan dengan scroll bar. Jika menggunakan nilai ini, scroll bar akan tetap muncul walaupun konten tidak terjadi overflow.
+•	auto : Sama seperti scroll, bedanya jika tidak terjadi overflow, maka nilai visible yang akan diterapkan. */
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <p>overflow : visible</p>
+        <div style="height: 200px; width: 200px; background-color: lightpink; overflow: visible;">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quae atque a doloremque recusandae,
+                commodi
+                eveniet ipsum architecto dolores minus incidunt esse. Praesentium optio ratione recusandae tempore nihil
+                perspiciatis repellendus?</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat alias veniam voluptatem ex. Distinctio
+                veritatis minima voluptate magnam facere cupiditate aperiam laudantium perferendis, vel mollitia, rem
+                quos!
+                Eius, eos est.
+            </p>
+        </div>
+    </div>
+    
+    <div>
+        <p>overflow : auto</p>
+        <div style="height: 200px; width: 200px; background-color: lightgreen; overflow: auto; display: inline-block;">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aperiam suscipit aliquid quibusdam ex,
+                molestias ad qui eligendi esse vel distinctio iste pariatur accusantium autem dolorem. Consequuntur iste
+                illum officia!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat alias veniam voluptatem ex. Distinctio
+                veritatis minima voluptate magnam facere cupiditate aperiam laudantium perferendis, vel mollitia, rem
+                quos!
+                Eius, eos est.
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <p>overflow : hidden</p>
+        <div style="height: 200px; width: 200px; background-color: lightpink; overflow: hidden; display: inline-block;">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quae atque a doloremque recusandae,
+                commodi
+                eveniet ipsum architecto dolores minus incidunt esse. Praesentium optio ratione recusandae tempore nihil
+                perspiciatis repellendus?</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat alias veniam voluptatem ex. Distinctio
+                veritatis minima voluptate magnam facere cupiditate aperiam laudantium perferendis, vel mollitia, rem
+                quos!
+                Eius, eos est.
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <p>overflow : scroll</p>
+        <div style="height: 200px; width: 200px; background-color: lightpink; overflow: scroll; display: inline-block;">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quae atque a doloremque recusandae,
+                commodi
+                eveniet ipsum architecto dolores minus incidunt esse. Praesentium optio ratione recusandae tempore nihil
+                perspiciatis repellendus?</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat alias veniam voluptatem ex. Distinctio
+                veritatis minima voluptate magnam facere cupiditate aperiam laudantium perferendis, vel mollitia, rem
+                quos!
+                Eius, eos est.
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

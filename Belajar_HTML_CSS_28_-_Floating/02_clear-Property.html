@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            border: 4px solid black;
+        }
+
+        img {
+            /* ! Problem ! */
+            /* Hal ini menunjukkan bahwa elemen yang menerapkan float “tidak dianggap ada”
+               oleh induk elemen yang menaunginya karena jika menggunakan float, elemen akan dikeluarkan dari normal flow. */
+            float: left;
+            margin: 10px;
+        }
+
+        .clear {
+            /* Mengatasi sifat float yang bgtu dengan clear*/
+            clear: both; /* untuk menghilangkan sifat float spenuhnya */
+            clear: left; /* untuk menghilangkan sifat float left */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="../Belajar_HTML_CSS_26_-_Rounded/latihan/assets/image/syaro.jpg" width="200px" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi commodi facere, eaque at quas ad fuga
+            quasi totam quis, vero soluta cupiditate enim labore culpa, ratione veniam expedita. Asperiores, eius.</p>
+            <!-- /* Mengatasi sifat float yang bgtu dengan clear*/ -->
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>

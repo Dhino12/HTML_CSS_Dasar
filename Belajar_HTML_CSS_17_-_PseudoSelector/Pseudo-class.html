@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            /* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+            color: red;
+        }
+
+        a:visited{
+            /* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+            color: green;
+        }
+
+        a:hover{
+            /* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+            color: pink;
+        }
+
+        a:active{
+            /* rule akan diterapkan pada sebuah tautan ketika ditekan */
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- Pseudo-class merupakan sebuah class “semu” yang sebenarnya ada pada tiap elemen HTML.  -->
+    <a href="google.com">Kunjungi Google</a>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            color: black;
+        }
+        /* <!-- Type Selector --> */
+        /* Semua Elemen Span */
+        span {
+            color: #ae00ff;
+        }
+
+        /* Class Selector */
+        .red {
+            color: red;
+        }
+
+        .blue-bg {
+            background-color: rgba(43, 255, 0, 0.336);
+        }
+
+        .fancy {
+            font-weight: bold;
+            text-shadow: 4px 4px 3px #77f;
+        }
+
+        /* Menargetkan secara spesifik di css */
+        p.red {
+            font-family: Impact;
+        }
+
+        /* ID Selector */
+        /* ID selector menetapkan target elemen berdasarkan nilai dari atribut id yang diterapkan pada elemennya. */
+        #special {
+            background-color: skyblue;
+        }
+
+        /* Attribut Selector  */
+        a[href] {
+            /* <a> element yang menerapkan href attribut */
+            color: blue;
+        }
+
+        a[href^="#"] {
+            /* <a> element yang menerapkan nilai pada href dengan awalan "#" */
+            background-color: gold;
+        }
+
+        a[href*="example"] {
+            /* <a> element yang menerapkan nilai pada href yang mengandung teks "example" */
+            background-color: silver;
+        }
+
+        a[href*="insensitive" i] {
+            /* <a> element yang menerapkan nilai pada href yang mengandung teks "insensitive" tidak mementingkan huruf kapital*/
+            font-family:Impact ;
+        }
+
+        a[href$=".org"] {
+            /* <a> element yang menerapkan nilai pada href dengan akhiran ".org" */
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Type Selector -->
+    <span class="red">Ini merupakan sebuah teks yang berada pada elemen span. Seharusnya elemen ini ditampilkan dengan
+        warna teks
+        merah.</span>
+    <p class="fancy">Ini merupakan sebuah teks yang berada pada elemen paragraf, teks ini tidak seharusnya tidak akan
+        terpengaruh oleh
+        rule.</p>
+    <span class="blue-bg fancy">Ini merupakan sebuah teks yang berada pada elemen span lainnya. Seharusnya elemen ini
+        ditampilkan dengan warna
+        teks merah juga.</span>
+    <!--Menerapkan Banyak class -->
+    <br><br><br><br>
+
+    <div id="special">
+        <p>Ini merupakan konten di dalam sebuah div yang diberi id special.</p>
+    </div>
+    <div>
+        <p>Ini merupakan konten di dalam sebuah div biasa</p>
+    </div>
+
+    <!-- Yang harus kita perhatikan kembali adalah id ini bersifat unik. 
+        Jika kita ingin menerapkan sebuah rule pada banyak elemen, sebaiknya gunakan atribut class, bukan dengan id.
+        id Tidak disarankan ganda / double -->
+
+    <br><br><br><br>
+    <ul>
+        <li><a href="#internal"> Internal Link </a></li>
+        <li><a href="google.com"> Example Link</a></li>
+        <li><a href="#InSensitive"> InSensitive Internal Link </a></li>
+        <li><a href="bing.org"> Example org link </a></li>
+    </ul>
+</body>
+
+</html>

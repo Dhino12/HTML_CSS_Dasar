@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.test {
+            text-indent: 2em;
+        } 
+    </style>
+</head>
+
+<body>
+    <!-- 16 pixel * 2 = 32 pixel (dua kali lebih besar dari ukuran font). -->
+    <p style="line-height: 2; background-color: aqua;">Hello World</p>
+    <p class="test">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero asperiores aut eum id excepturi
+        facilis fugiat ut tempora iste soluta, quibusdam nam? Perspiciatis quibusdam voluptatum aspernatur illo dicta.
+        Perferendis, beatae.</p>
+    <p style="text-align: center;">Center...</p>
+    <p style="text-align: left;">Left...</p>
+    <p style="text-align: right;">Right...</p>
+    <p style="text-align: justify; width: 200px;">Justify Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perferendis dolor
+        quae placeat rem error cum repellendus ullam, dolorem non nulla eius quos eligendi. Tempore pariatur natus
+        doloribus minus vero....</p>
+    <span style="text-decoration: underline;"> underline &nbsp;&nbsp;</span>
+    <span style="text-decoration: overline;"> overline &nbsp;&nbsp;&nbsp;</span>
+    <span style="text-decoration: line-through;"> line-through &nbsp;&nbsp;&nbsp;</span>
+    <span style="text-decoration: none;"> none </span>
+
+    <br><br><br>
+    <p style="text-transform:none"> Text Transform digunakan untuk mengatur kapitalisasi text</p>
+    <p style="text-transform:capitalize"> Text Transform digunakan untuk mengatur kapitalisasi text</p>
+    <p style="text-transform:lowercase"> Text Transform digunakan untuk mengatur kapitalisasi text</p>
+    <p style="text-transform:uppercase"> Text Transform digunakan untuk mengatur kapitalisasi text</p>
+
+    <br><br><br>
+    <!-- letter dan word spacing nilainya dapat diturunkan pada elemen turunannya. -->
+    <p>letter-spacing = 4px</p>
+    <p style="letter-spacing: 4px;">Yogyakarta, Kota yang kaya akan sejarah</p>
+    <p>word-spacing = 1.5em</p>
+    <p style="word-spacing: 1.5em;">Yogyakarta, Kota yang kaya akan sejarah</p> 
+    
+<!-- 
+    •	Nilai pertama   : menunjukkan seberapa jauh ke kiri atau kanan (horizontal) bayangan harus ditampakkan.
+    •	Nilai kedua     : menunjukkan jarak ke atas atau ke bawah (vertical) bayangan harus ditampakkan. 
+    •	Nilai Ketiga (opsional) : menentukan tingkat keburaman yang harus diterapkan pada bayangan.
+    •	Nilai Keempat   :  menentukan warna yang digunakan pada bayangan. -->
+    <p style="text-shadow: 2px 5px 5px blue; color: white;">Hayuk Main Yuk</p>
+</body>
+
+</html>

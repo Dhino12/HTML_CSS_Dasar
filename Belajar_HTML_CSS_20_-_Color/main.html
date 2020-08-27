@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* linear-gradient(direction, color-stop1, color-stop2, ...) */
+            background: linear-gradient(to right,red,blue);
+            /* background: linear-gradient(90deg,red,blue); */ /* sama aja */
+        }
+        p{
+            /* Warna abu abu Menggunakan format HEX */
+            color: #aaaaaa;
+
+            /* Warna hijau menggunakan format RGB */
+            color: rgb(78,231,23);
+
+            /* Warna hijau menggunakan format HSL (hanya di CSS3)*/
+            color: hsl(157, 100%, 61%);
+
+            /* Predefined Color Name */
+            color: aqua;
+        }
+        div#opacity p{
+            background-color: #696969;
+            opacity: 0.5;
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>Hai..</p>
+    <p style="color: rgba(0, 0, 0, 0.377);">Opacity..</p>
+    <div id="opacity">
+        <p>Hallo</p>
+    </div>
+</body>
+</html>

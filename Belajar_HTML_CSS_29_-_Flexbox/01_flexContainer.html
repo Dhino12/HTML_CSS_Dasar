@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            /* Untuk membuat sebuah flex container kita gunakan properti display dengan nilai flex. */
+            /* Flex container merupakan sebuah elemen yang menampung beberapa flex item.  */
+            display: flex;
+
+            /* property lainnya */
+            width: 800px;
+            height: 250px;
+            background-color: #11c5c6;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+
+        .box {
+            /* kita tidak menetapkan nilai dimensi seperti width dan height. 
+            Kita cukup menggunakan satu properti yakni flex-grow: 1;. */
+            flex-grow: 1;
+
+            /* properti lainnya */
+            background-color: #FBDD1C;
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            /* Untuk membuat sebuah flex container kita gunakan properti display dengan nilai flex. */
+            /* Flex container merupakan sebuah elemen yang menampung beberapa flex item.  */
+            display: flex;
+
+            /* property lainnya */
+            width: 800px;
+            height: 250px;
+            background-color: #11c5c6;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+
+        .box {
+            flex-grow: 1;
+
+            /* properti lainnya */
+            background-color: #FBDD1C;
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+
+        }
+
+        .container2 {
+            display: flex;
+
+            /* propery lainny */
+            width: 800px;
+            height: 250px;
+            background-color: #11c5c6;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+
+        .box2 {
+            background-color: #fbdd1c;
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .first {
+            /* kita tidak menetapkan nilai dimensi seperti width dan height. 
+            Kita cukup menggunakan satu properti yakni flex-grow: 1;. */
+            flex-grow: 1;
+        }
+
+        .second {
+            flex-grow: 2;
+        }
+
+        .third {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="box2 first"></div>
+        <div class="box2 second"></div>
+        <div class="box2 third"></div>
+    </div>
+</body>
+
+</html>
+
+<!-- Properti flex-grow ini digunakan untuk memberitahu berapa banyak ukuran yang
+    harus ditetapkan oleh flex-item. Nilai dari properti ini bukan
+    nilai dari dimensi asli pada flex item, melainkan nilai
+    yang relatif terhadap ruang kosong pada flex container. -->

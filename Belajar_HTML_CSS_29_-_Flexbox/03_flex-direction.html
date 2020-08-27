@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Secara default deretan flex-item ditampilkan secara horizontal, 
+        namun kita dapat mengubahnya dengan menetapkan properti flex-direction pada container-nya. -->
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            /* property lainnya */
+            width: 800px;
+            height: 250px;
+            background-color: #11c5c6;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+
+        .box {
+            /* property lainnya */
+            background-color: #fbdd1c;
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .first {
+            flex-grow: 3;
+        }
+
+        .second {
+            flex-grow: 2;
+        }
+
+        .third {
+            flex-grow: 1;
+        }
+
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+
+            /* property lain */
+            width: 800px;
+            height: 300px;
+            padding: 20px;
+            margin: 0 auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: #11c5c6;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+
+            /* properti lainnya */
+            padding: 20px;
+            margin: 5px;
+            background-color: #FBDD1C;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .box2 {
+            flex-grow: 1;
+
+            /* property lain*/
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: #fe899a;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box first">flex-grow: 3</div>
+        <div class="box second">flex-grow: 2</div>
+        <div class="box third">flex-grow: 1</div>
+    </div>
+
+    <br>
+
+    <div class="flex-column">
+        <div class="flex-row">
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+        </div>
+        <div class="flex-row">
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- 
+    •	row : merupakan nilai default, di mana deretan flex-item pada container ditampilkan secara horizontal.
+    •	row-reverse : memiliki sifat yang sama seperti row, namun urutan flex item-nya ditukar.
+    •	column : Deretan flex-item pada container ditampilkan secara vertikal.
+    •	column-reverse : memiliki sifat yang sama seperti column, namun urutan flex item-nya ditukar. -->

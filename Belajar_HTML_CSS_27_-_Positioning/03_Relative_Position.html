@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- dengan menetapkan relative
+        pada properti position, kita dapat melakukan perpindahan posisi 
+        elemen ke atas, kanan, bawah, maupun kiri.  -->
+    <style>
+        h1 {
+            background-color: #aaa;
+            padding: 30px;
+        }
+
+        p {
+            background-color: aqua;
+            width: 360px;
+        }
+
+        .relative {
+            background-color: crimson;
+            position: relative;
+            top: 10px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum sit amet</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit dignissimos facilis nemo! Delectus illum impedit
+        cumque minus. Explicabo eligendi voluptatibus nulla labore quasi nihil magnam impedit rem accusamus, corporis
+        aliquid?</p>
+
+    <p class="relative"><b> Lorem ipsum </b> dolor sit amet consectetur adipisicing elit. Voluptas praesentium harum nobis et
+        ipsa, aliquam
+        officia quis iusto voluptatum. Soluta aspernatur nam blanditiis omnis explicabo qui saepe molestiae. Vel, ad?
+    </p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa veritatis ullam in porro magnam explicabo,
+        debitis dolor autem ut maxime voluptatem illo nesciunt beatae sapiente? Eius deleniti adipisci pariatur culpa.
+    </p>
+</body>
+
+</html>
+
+<!-- Perpindahan posisi yang dilakukan tidak akan berpengaruh terhadap posisi elemen 
+    di sekitarnya karena dengan  relative positioning, elemen tersebut akan dipindahkan dari normal flow -->

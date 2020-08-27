@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+        }
+
+        .first{
+            /* first berada di static flow */
+            background-color: aqua;
+            text-align: center;
+        }
+
+        .second{
+            /* second berada di static non-static-flow */
+            background-color: brown;
+            margin-top: 20px;
+            text-align: center;
+            /* Untuk mengubah posisi elemen yang berada di non-static flow */
+            position: relative;
+            left: 10px;
+            top: 30px;
+        }
+
+        .third{
+            /* third berada di static flow */
+            background-color: yellowgreen;
+            text-align: center;
+        }
+
+        /* Karena kita tidak mengatur properti position dari ketiga elemen tersebut,
+        maka tiap elemen akan ditampilkan dengan static flow  */
+    </style>
+</head>
+<body>
+    <div class="box first">First</div>
+    <div class="box second">Second</div>
+    <div class="box third">Third</div>
+</body>
+</html>
+
+
+<!-- Perlu kita ingat ya, bahwa properti top, left, right dan bottom 
+    pada CSS hanya akan berpengaruh pada 
+    elemen yang menerapkan non-static flow 
+    (elemen yang menerapkan nilai relative, absolute, dan fixed pada properti position). -->

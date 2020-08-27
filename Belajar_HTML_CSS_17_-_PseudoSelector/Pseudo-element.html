@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Selector ini biasa digunakan ketika kita ingin menambahkan sebuah 
+        konten tepat sebelum dan setelah sebuah elemen paragraf.  -->
+    <style>
+        body{
+            margin: 0px;
+            padding: 10px;
+        }
+        blockquote ,p{
+            width: 300px;
+            margin: 25px 40% ;
+            padding: 0px;
+        }
+
+        blockquote::before,
+        blockquote::after {
+            content: ' " ';
+            font-size: 24px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /* Rule styling akan diterapkan pada karakter pertama disebuah paragraf */
+        p::first-letter {
+            font-size: 32px;
+            font-weight: bold;
+            color: saddlebrown;
+        }
+    </style>
+</head>
+
+<body>
+        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio, enim ex neque dolorem commodi quia.
+            Ex,
+            perferendis dolorem aliquam nostrum exercitationem, id, pariatur cupiditate esse laudantium molestias sequi
+            enim!</blockquote>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempora officia dolorum quidem, accusamus ipsum,
+        libero vero reprehenderit neque itaque earum, cum unde quos natus soluta repellat non eum facere.</p>
+</body>
+
+</html>
