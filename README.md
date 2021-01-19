@@ -14,3 +14,4 @@ catatan penting :
 *	Plain text : Teks yang tidak terformat. Format teks yang digunakan dalam menuliskan berkas HTML, CSS dan Javascript.
 *	Rich text : Teks terformat. Format teks yang digunakan ketika kita menuliskan dengan menggunakan Microsoft Word atau teks editor berbasis WYSIWYG [What You See Is What You Get].
 *	Element : Sebuah komponen pada HTML yang ditandai dengan tag pembuka dan penutup.
+ 
